@@ -16,6 +16,10 @@ class Triangle
     if @side_one == @side_two || @side_two == @side_three
       :equilateral
     end
+    
+    if @side_one == @side_two && @side_two != @side_three
+      :isosceles
+    end
   end
 
   class TriangleError < StandardError
