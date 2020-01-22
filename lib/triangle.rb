@@ -14,7 +14,8 @@ class Triangle
     end
     
     if @side_one != @side_two || @side_two != @side_three
-      raise TriangleError::@
+      raise TriangleError::equilateral
+    end
   end
 
   class TriangleError < StandardError
