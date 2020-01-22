@@ -13,8 +13,8 @@ class Triangle
       raise TriangleError
     end
     
-    if @side_one != @side_two || @side_two != @side_three
-      raise TriangleError::equilateral
+    if @side_one == @side_two || @side_two == @side_three
+      Triangle::equilateral
     end
   end
 
